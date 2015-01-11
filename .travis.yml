@@ -12,6 +12,7 @@ install:
   - pip install coveralls
 
 script:
+  - python -m compileall -f .
   - python manage.py test home
   - coverage run --source=home manage.py test home
 
