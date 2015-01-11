@@ -22,7 +22,7 @@ script:
    -  ./success.sh
 
 script:
-  - py.test test/tests.py -v --cov coveralls --cov-report term-missing
+  - py.test test/tests.py 
 
 after_success:
   - coveralls
