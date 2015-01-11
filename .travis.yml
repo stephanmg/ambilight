@@ -16,8 +16,9 @@ install:
   - pip install coveralls
 
 script:
-  - python -m compileall -f .
-  - python manage.py test home
-  - coverage run --source=home manage.py test home
+#  - python -m compileall -f .
+#  - python manage.py test home
+#  - coverage run --source=home manage.py test home
 
-after_success: coveralls
+after_success: 
+#  - coveralls
