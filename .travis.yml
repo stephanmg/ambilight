@@ -8,6 +8,7 @@ before_install:
   - sudo apt-get install libprotobuf-dev
   - sudo apt-get install python-protobuf
   - sudo apt-get install python-protobuf.socketrpc
+  - pip install protobuf
   - ./install-ola.sh
 
 install:
