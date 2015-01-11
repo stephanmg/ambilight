@@ -13,7 +13,6 @@ before_install:
    - pip install protobuf
    - pip install coveralls
    - pip install pytest
-   - pip install python-coveralls
 
 install:
    - ./install-ola.sh
