@@ -2,15 +2,11 @@ language: python
 version:
   - "2.7"
 
-install:
-  - pip install coveralls
+before_install:
+  - ./install-ola.sh
 
 install:
-  - git clone https://github.com/stephanmg/ola.git
-  - cd ola
-  - autoreconf
-  - ./configure --enable-python-libs
-  - make dist
+  - pip install coveralls
 
 script:
   - python -m compileall -f .
