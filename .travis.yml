@@ -12,6 +12,7 @@ before_install:
    - sudo apt-get install python-protobuf.socketrpc
    - pip install protobuf
    - pip install coveralls
+   - pip install pytest
 
 install:
    - ./install-ola.sh
@@ -19,5 +20,8 @@ install:
 script:
    -  ./success.sh
 
+script:
+  - py.test test/tests.py --pep8 coveralls -v --cov coveralls --cov-report term-missing
+
 after_success:
-   - coveralls
+  - coveralls
