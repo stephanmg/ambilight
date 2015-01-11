@@ -4,3 +4,6 @@ def func(x):
 
 def test_answer():
     assert func(3) == 4
+
+if __name__ == "__main__":
+   test_answer()
