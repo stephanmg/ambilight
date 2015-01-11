@@ -16,7 +16,7 @@ before_install:
 install:
   - ./install-ola.sh
 
-script:
+# script:
   # insert script here
-after_success:
+# after_success:
   # insert after_success here
