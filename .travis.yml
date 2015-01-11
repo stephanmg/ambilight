@@ -13,6 +13,7 @@ before_install:
    - pip install protobuf
    - pip install coveralls
    - pip install pytest
+   - pip install python-coveralls
 
 install:
    - ./install-ola.sh
@@ -21,7 +22,7 @@ script:
    -  ./success.sh
 
 script:
-  - py.test test/tests.py --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - py.test test/tests.py -v --cov coveralls --cov-report term-missing
 
 after_success:
   - coveralls
