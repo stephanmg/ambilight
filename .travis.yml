@@ -3,6 +3,8 @@ version:
   - "2.7"
 
 before_install:
+  - sudo apt-get update
+  - sudo apt-get install libcppunit-dev
   - ./install-ola.sh
 
 install:
