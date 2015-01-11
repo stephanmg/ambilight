@@ -1,0 +1,18 @@
+language: python
+
+before_install:
+   - sudo apt-get update -qq
+   - sudo apt-get install ola
+   - sudo apt-get install ola-python ola-rdm-tests
+
+version:
+  - "2.7"
+
+install:
+  - pip install coveralls
+
+script:
+  - python manage.py test home
+  - coverage run --source=home manage.py test home
+
+after_success: coveralls
