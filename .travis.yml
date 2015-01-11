@@ -1,23 +1,23 @@
 language: python
 
 version:
-  - "2.7"
+   - "2.7"
 
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install libcppunit-dev
-  - sudo apt-get install libprotobuf-dev
-  - sudo apt-get install libprotoc-dev
-  - sudo apt-get install python-protobuf
-  - sudo apt-get install python-protobuf.socketrpc
-  - pip install protobuf
-  - pip install coveralls
+   - sudo apt-get update
+   - sudo apt-get install libcppunit-dev
+   - sudo apt-get install libprotobuf-dev
+   - sudo apt-get install libprotoc-dev
+   - sudo apt-get install python-protobuf
+   - sudo apt-get install python-protobuf.socketrpc
+   - pip install protobuf
+   - pip install coveralls
 
 install:
-  - ./install-ola.sh
+   - ./install-ola.sh
 
 script:
- -  ./success.sh
+   -  ./success.sh
 
-# after_success:
-  # insert after_success here
+after_success:
+   - coveralls
