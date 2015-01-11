@@ -1,7 +1,10 @@
 language: python
 
+before_script:
+  - sudo add-apt-repository ppa:jerome-jblb/ola-ppa -y
+  - sudo apt-get update -qq
+
 before_install:
-   - sudo apt-get update -qq
    - sudo apt-get install ola
    - sudo apt-get install ola-python ola-rdm-tests
 
