@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-## author: stephan 
 ## date: 30th of December 2014
+
+__author__ = 'Stephan Grein'
+
+"""
+Dim
+"""
 
 # necessary imports for OLA on RPI
 import array
