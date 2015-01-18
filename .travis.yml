@@ -23,3 +23,7 @@ script:
 
 after_success:
   - coveralls
+
+notifications:
+  email:
+    - stephan@syntaktischer-zucker.de
