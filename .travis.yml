@@ -1,18 +1,31 @@
 language: python
 
-before_install:
-   - sudo apt-get update -qq
-   - sudo apt-get install ola
-   - sudo apt-get install ola-python ola-rdm-tests
-
 version:
-  - "2.7"
+   - "2.7"
+
+before_install:
+   - sudo apt-get update
+   - sudo apt-get install libcppunit-dev
+   - sudo apt-get install libprotobuf-dev
+   - sudo apt-get install libprotoc-dev
+   - sudo apt-get install python-protobuf
+   - sudo apt-get install python-protobuf.socketrpc
+   - pip install protobuf
+   - pip install coveralls
+   - pip install pytest
 
 install:
-  - pip install coveralls
+   - ./install-ola.sh
 
 script:
-  - python manage.py test home
-  - coverage run --source=home manage.py test home
+  - py.test test/tests.py 
+  - coverage run test/tests.py
 
-after_success: coveralls
+after_success:
+  - coveralls
+
+notifications:
+  email:
+    - stephan@syntaktischer-zucker.de
+  on_success: always
+  on_failure: always
