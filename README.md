@@ -9,3 +9,9 @@ Badges:
  [![Stories in Ready](https://badge.waffle.io/stephanmg/ambilight.png?label=ready&title=Ready)](http://waffle.io/stephanmg/ambilight)
  [![Stories in In Progress](https://badge.waffle.io/stephanmg/ambilight.png?label=in progress&title=In Progress)](http://waffle.io/stephanmg/ambilight)
  [![Stories in Done](https://badge.waffle.io/stephanmg/ambilight.png?label=done&title=Done)](http://waffle.io/stephanmg/ambilight)
+
+See also:
+* [!Python-Coveralls](https://pypi.python.org/pypi/python-coveralls/)
+* [!Coveralls](https://pypi.python.org/pypi/coveralls)
+* [!Pytest](http://pytest.org/latest/)
+* [!Testing in Python](http://docs.python-guide.org/en/latest/writing/tests/)
