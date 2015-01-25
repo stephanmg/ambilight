@@ -1,6 +1,7 @@
 ambilight
 ===================
-Utilizing the OLA project for snoozing lights (wakeup and asleep)
+Utilizing the OLA project for snoozing lights (wakeup and asleep).
+May contain soon Perl bindings for the OLA project.
 
 CI:
 * [![CI Build Status](https://travis-ci.org/stephanmg/ambilight.svg?branch=master)](https://travis-ci.org/stephanmg/ambilight)
